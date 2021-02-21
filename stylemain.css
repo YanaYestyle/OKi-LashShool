@@ -1,0 +1,199 @@
+.dropbutton {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbutton:hover, .dropbutton:focus {
+    background-color: #28a745;;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    overflow:auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+    padding: 12px 135px;
+    text-decoration: none;
+}
+
+.dropdowncontent a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+#head {
+    color: #28a745;;
+    text-align: center;
+}
+
+#menu {
+    border: none;
+}
+
+.row {
+    padding: 10px;
+}
+
+#shopping-cart {
+    border:none;
+    float: right;
+}
+
+#down3 {
+    text-align: center;
+}
+
+.imgShop {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.add-item {
+    float: right;
+}
+
+h5 {
+    color: #28a745;;
+}
+
+h1 {
+    color: #28a745;;
+    text-align: center;
+}
+
+#question {
+    font-size: 1.3em;
+}
+
+.podkast-test {
+    margin-top: 5em;
+}
+
+a {
+    color: white;
+    text-align: center;
+}
+
+#test {
+    margin-left: 20em;
+}
+
+.test{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.zacznijmy {
+    font-size: 1.4em;
+    text-align: center;
+    color: #28a745;;
+}
+
+.test-question {
+    text-align: center;
+    padding-bottom: 1.2em;
+}
+
+#question1, #question2 {
+    margin-left: 1.5em;
+}
+
+.btn-next-question {
+    float: right;
+    margin-right: 1em;
+}
+
+.testbutton {
+    float: right;
+    margin-right: 24em;
+}
+
+.modal-title {
+    color: #28a745;;
+    text-align: center;
+}
+
+#ques4 {
+    font-size: 1em;
+}
+
+#myModalAnswer1Tak {
+    display: none;
+}
+
+#myModalAnswer2Tak {
+    display: none;
+}
+
+#myModalAnswer3Tak {
+    display: none;
+}
+
+#myModalAnswer4Tak {
+    display: none;
+}
+
+.imgShopModal {
+    width: 150px;
+    height: 150px;
+    border: none;
+}
+
+/* unvisited link */
+.forTest:link {
+    color: white ;
+}
+  
+  /* visited link */
+.forTest:visited {
+    color: white;
+}
+  
+  /* mouse over link */
+.forTest:hover {
+        color:white;
+}
+  
+  /* selected link */
+.forTest:active {
+    color: white;
+}
+
+.forTest:hover {
+    text-decoration: none;
+}
+  
+.back:link, .back:visited {
+    background-color: #28a745;;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+  
+.back:hover, .back:active {
+    background-color:#28a745;;
+    font-size: 14px;
+}
+
