@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oki LashSchool</title>
     <link rel="stylesheet" href="/Bootrap/bootstrap-4.5.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylemain.css" type="text/css"/>
-    
+    <link rel="stylesheet" href="stylemain.css" type="text/css">
+
 </head>
+
 <body>
 
     <div class="container-fluid">
         <div class="row">
-            
             <div class="col-sm-2">
                 <div class="dropdown">
                     <button onclick="myFunction()" class="dropbutton">
-                         <img src="pictures/menu-square-button (45 x 45).png" id="menu" alt="Cinque Terre">
+                        <img src="pictures/menu-square-button (45 x 45).png" id="menu" alt="Cinque Terre">
                     </button>
                     <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 1</a>
+                        <a style="color: #28a745;" href="#shop">Formaty szkoleń</a>
+                        <a style="color: #28a745;" href="#linkfortest">Test</a>
+                        <a style="color: #28a745;" href="#opinia">Opinia</a>
+                        <a style="color: #28a745;" href="#footer">Kontakty</a>
                     </div>
                 </div>
-            </div> <!--здесь бндет кнопкт-->
-                <div class="col-sm-8">
-                    <h1 id="head">OKI LashSchool</h1>
-                </div>
-                
-                <div class="col-sm-2">
-                    <button onclick="myFunction()" class="dropbutton" id="checkout">
-                        <img src="pictures/shopping-cart (45 x 45).png" id="shopping-cart" alt="Shopping-cart">
-                    </button>
-                    <button id="clear-cart">Wyczyscić koszyk</button>
-                    <div id="cart-content"></div>
-                </div>
-                
-            
-        </div> 
+            </div>
+            <!--здесь бндет кнопкт-->
+            <div class="col-sm-8">
+                <h1 id="head">OKI LashSchool</h1>
+            </div>
+
+            <div class="col-sm-2">
+                <a href="cart.html">
+                    <img src="/pictures/shopping-cart (45 x 45).png" id="shopping-cart" alt="Shopping-cart">
+                </a> 
+            </div>
+            <hr>
+        </div>
 
         <div class="container">
             <div class="row">
@@ -48,157 +47,218 @@
                     <img src="pictures/down3 (750 x 546).jpg.jpg" id="down3" alt="Girl watch down">
                 </div>
                 <div class="col-sm-1"></div>
-            <!--рисунок-->
-            
-        </div> 
+                <!--рисунок-->
 
-        <div class="container">
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card" id="shop">
+                            <div class="card-body">
+                                <img src="pictures/1 to 1 1 day (240 x 240).jpg.jpg" class="imgShop" alt="logo 1 to 1">
+                            </div>
+                            <div class="card-footer">
+                                <h5><a class="courses" href="metoda1to1.html" target="_self">Metoda 1 do 1</a></h5>
+                                <h6>Szkolenie trwa 1 dzień</h6>
+                                <button type="button" class="btn btn-success add-item" id="buttonBuy1">
+                                    <a class="forTest" href="cart.html" target="_self">Do
+                                    koszyka</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="pictures/2-3D 1 day (240 x 240).jpg.jpg" class="imgShop" alt="logo 2-3D">
+                            </div>
+                            <div class="card-footer">
+                                <h5><a class="courses" href="metoda2d.html" target="_self">Metoda 2-3D</a></h5>
+                                <h6>Szkolenie trwa 1 dzień</h6>
+                                <button type="button" class="btn btn-success add-item" id="buttonBuy2">
+                                    <a class="forTest" href="cart.html" target="_self">Do
+                                    koszyka</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="pictures/russian 1 day (240 x 240).jpg.jpg" class="imgShop"
+                                    alt="logo russian">
+                            </div>
+                            <div class="card-footer">
+                                <h5><a class="courses" href="russian.html" target="_self">Russian / Hollywood Effect</a>
+                                </h5>
+                                <h6>Szkolenie trwa 1 dzień</h6>
+                                <button type="button" class="btn btn-success add-item" id="buttonBuy3">
+                                    <a class="forTest" href="cart.html" target="_self">Do
+                                    koszyka</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="pictures/1 to 1 2 days (240 x 240).jpg.jpg" class="imgShop"
+                                    alt="logo 1 to 1 2 days">
+                            </div>
+                            <div class="card-footer">
+                                <h5><a class="courses" href="metoda1to12dni.html" target="_self">Metoda 1 do 1</a></h5>
+                                <h6>Szkolenie trwa 2 dni</h6>
+                                <button type="button" class="btn btn-success add-item" id="buttonBuy4">Do
+                                    koszyka</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="pictures/2-3D 2 days (240 x 240).jpg.jpg" class="imgShop"
+                                    alt="logo 2-3D 2 days">
+                            </div>
+                            <div class="card-footer">
+                                <h5><a class="courses" href="metoda2d2ni.html" target="_self">Metoda 2-3D</a></h5>
+                                <h6>Szkolenie trwa 2 dni</h6>
+                                <button type="button" class="btn btn-success add-item" id="buttonBuy5">Do
+                                    koszyka</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="pictures/russian 2 days (240 x 240).jpg.jpg" class="imgShop"
+                                    alt="logo russian 2 days">
+                            </div>
+                            <div class="card-footer">
+                                <h5><a class="courses" href="russion2dni.html" target="_self">Russian / Hollywood
+                                        Effect</a></h5>
+                                <h6>Szkolenie trwa 2 dni</h6>
+                                <button type="button" class="btn btn-success add-item" id="buttonBuy6">Do
+                                    koszyka</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="pictures/all 3 dni (240 x 240).jpg.jpg" class="imgShop"
+                                    alt="logo all courses">
+                            </div>
+                            <div class="card-footer">
+                                <h5><a class="courses" href="expresse.html" target="_self">Express course (metody
+                                        1-10D)</a></h5>
+                                <h6>Szkolenie trwa 3 dni</h6>
+                                <button type="button" class="btn btn-success add-item" id="buttonBuy7">Do
+                                    koszyka</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="pictures/Masterclass 1 day (240 x 240).jpg.jpg" class="imgShop"
+                                    alt="logo Masterclass">
+                            </div>
+                            <div class="card-footer">
+                                <h5><a class="courses" href="masterclass.html" target="_self">Masterclasses</a></h5>
+                                <h6>Szkolenie trwa 1 dzień</h6>
+                                <button type="button" class="btn btn-success add-item" id="buttonBuy8">Do
+                                    koszyka</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="szkolenieOnline">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="pictures/online (240 x 240).jpg.jpg" class="imgShop" alt="logo online">
+                            </div>
+                            <div class="card-footer item-box">
+                                <h5 class="item-title"><a class="courses" href="online.html" target="_self">Szkolenie
+                                        ONLINE</a></h5>
+                                <h6>Szkolenie trwa 60 dni</h6>
+                                <button type="button" class="btn btn-success add-item" id="buttonBuy9">Do koszyka</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="container">
+                <!--рисунок и текст-->
+                <div class="row podkast-test">
+                    <div class="col-sm-4">
+                        <img src="pictures/down (183 x 163).jpg" alt="Girl look down">
+                    </div>
+                    <div class="col-sm-8" id="linkfortest">
+                        <h1>Zaplątałaś?</h1>
+                        <p id="question">Sama jestem zdezorientowanа w tych formatach, więc przygotowałam łatwy test,
+                            który pomoże Ci wybrać idealny kurs...</p>
+                        <button type="button" class="btn btn-success" id="test">
+                            <a class="forTest" href="test.html" target="_self">TEST</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="containaer" id="opinia">
+            <h1>Czy warto kupowac?</h1>
+            <p class="tovideo">I oczywiście, jak każda odpowiednia osoba, zanim zapłacisz, warto posłuchać opinii innych ludzi...</p>
             <div class="row">
                 <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="pictures/1 to 1 1 day (240 x 240).jpg.jpg" class="imgShop" alt="logo 1 to 1">
-                        </div>
-                        <div class="card-footer">
-                            <h5>Metoda 1 go 1</h5>
-                            <h6>Szkolenie trwa 1 dzień</h6>
-                            <button type="button" class="btn btn-success add-item" id="buttonBuy">Do koszyka</button>
-                        </div>
-                      </div>
+                    <video width="320" height="180" controls>
+                        <source src="/pictures/opinia2.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="pictures/2-3D 1 day (240 x 240).jpg.jpg" class="imgShop" alt="logo 2-3D">
-                        </div>
-                        <div class="card-footer">
-                            <h5>Metoda 2-3D</h5>
-                            <h6>Szkolenie trwa 1 dzień</h6>
-                            <button type="button" class="btn btn-success add-item" id="buttonBuy">Do koszyka</button>
-                        </div>
-                      </div>
+                    <video width="320" height="180" controls>
+                        <source src="/pictures/opinia3.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="pictures/russian 1 day (240 x 240).jpg.jpg" class="imgShop" alt="logo russian">
-                        </div>
-                        <div class="card-footer">
-                            <h5>Russian / Hollywood Effect</h5>
-                            <h6>Szkolenie trwa 1 dzień</h6>
-                            <button type="button" class="btn btn-success add-item" id="buttonBuy">Do koszyka</button>
-                        </div>
-                      </div>
+                    <video width="320" height="180" controls>
+                        <source src="/pictures/opinia4.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer" id="footer">
+            <div class="row">
+                <div class="col-sm-6">
+                    <a href="https://www.instagram.com/yana.yestyle/" id="instagram">
+                        <img src="/pictures/instagram.png" alt="Instagram" style="width:35px;height:35px;">
+                    </a> 
+                </div>
+                <div class="col-sm-6">
+                    <a href="https://www.facebook.com/874376789409685/shop/all_products/?ref_code=page_shop_card&ref_surface=mini_shop_product_details">
+                        <img src="/pictures/Facebook.png" alt="Facebook" style="width:35px;height:35px;">
+                    </a> 
                 </div>
             </div>
             <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="pictures/1 to 1 2 days (240 x 240).jpg.jpg" class="imgShop" alt="logo 1 to 1 2 days">
-                        </div>
-                        <div class="card-footer">
-                            <h5>Metoda 1 go 1</h5>
-                            <h6>Szkolenie trwa 2 dni</h6>
-                            <button type="button" class="btn btn-success add-item" id="buttonBuy">Do koszyka</button>
-                        </div>
-                    </div>   
+                <div class="col-sm-6">
+                    <img src="/pictures/copyright.png" alt="copyright" style="width:15px;height:15px;" id="copyright">
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="pictures/2-3D 2 days (240 x 240).jpg.jpg" class="imgShop" alt="logo 2-3D 2 days">
-                        </div>
-                        <div class="card-footer">
-                            <h5>Metoda 2-3D</h5>
-                            <h6>Szkolenie trwa 2 dni</h6>
-                            <button type="button" class="btn btn-success add-item" id="buttonBuy">Do koszyka</button>
-                        </div>
-                    </div>   
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="pictures/russian 2 days (240 x 240).jpg.jpg" class="imgShop" alt="logo russian 2 days">
-                        </div>
-                        <div class="card-footer">
-                            <h5>Russian / Hollywood Effect</h5>
-                            <h6>Szkolenie trwa 2 dni</h6>
-                            <button type="button" class="btn btn-success add-item" id="buttonBuy">Do koszyka</button>
-                        </div>
-                    </div>     
-                </div>
-            </div> 
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="pictures/all 3 dni (240 x 240).jpg.jpg" class="imgShop" alt="logo all courses">
-                        </div>
-                        <div class="card-footer">
-                            <h5>Express course (metody 1-10D)</h5>
-                            <h6>Szkolenie trwa 3 dni</h6>
-                            <button type="button" class="btn btn-success add-item" id="buttonBuy">Do koszyka</button>
-                        </div>
-                    </div>        
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="pictures/Masterclass 1 day (240 x 240).jpg.jpg" class="imgShop" alt="logo Masterclass">
-                        </div>
-                        <div class="card-footer">
-                            <h5>Masterclasses</h5>
-                            <h6>Szkolenie trwa 1 dzień</h6>
-                            <button type="button" class="btn btn-success add-item" id="buttonBuy">Do koszyka</button>
-                        </div>
-                    </div>      
-                </div>
-                <div class="col" id="szkolenieOnline">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="pictures/online (240 x 240).jpg.jpg" class="imgShop" alt="logo online">
-                        </div>
-                        <div class="card-footer item-box">
-                            <h5 class="item-title">Szkolenie ONLINE</h5>
-                            <h6>Szkolenie trwa 10 dni</h6>
-                            <button type="button" class="btn btn-success add-item" data-id="9">Do koszyka</button>
-                        </div>
-                    </div>    
+                <div class="col-sm-6">
+                    <p id="year">2021</p>
                 </div>
             </div>
-        </div>
-
-        <div class="container">
-            <!--рисунок и текст-->
-            <div class="row podkast-test">
-                <div class="col-sm-4">
-                    <img src="pictures/down (183 x 163).jpg" alt="Girl look down">
-                </div>
-                <div class="col-sm-8">
-                    <h1>Zaplątałaś?</h1>
-                    <p id="question">Sama jestem zdezorientowanа w tych formatach, więc przygotowałam łatwy test, który pomoże Ci wybrać idealny kurs...</p>
-                    <button type="button" class="btn btn-success" id="test">
-                        <a class="forTest" href="test.html" target="_self">TEST</a>
-                    </button>
-                </div>
-              </div>
-
-        </div>
-
-        <div class="containaer">
-            <!--здесь 2 варианта и тест-->
-           
-
-        <div class="container">
-            <!--ссылки-->
-        </div>
-
-        <div class="footer">
-
         </div>
     </div>
-  
+
 
 
 
@@ -206,4 +266,5 @@
     <script src="/Bootrap/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

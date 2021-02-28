@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oki LashSchool test</title>
     <link rel="stylesheet" href="/Bootrap/bootstrap-4.5.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylemain.css" type="text/css"/>
-    
+    <link rel="stylesheet" href="stylemain.css" type="text/css">
+    <link rel="stylesheet" href="styletest.css" type="text/css">
+
 </head>
 
 <body>
     <div class="container-fluid">
+        <div class="interactive-text">
+            <h1 id="intertext" class="A">OKi</h1>
+            <h1 id="intertext" class="B">LashSchool</h1>
+        </div>
         <div class="row">
             <div class="col-sm-4">
                 <img src="pictures/drow (404 x 391).jpg" alt="Girl funny">
             </div>
             <div class="col-sm-8">
-                <h1>OKi LashSchool</h1>
                 <p class="test">Odpowiedz na kilka prostych pytań.</p>
                 <p class="test">Pomoże to wybrać idealny kurs dla Ciebie.</p>
                 <p class="zacznijmy">Zacznijmy?</p>
@@ -24,9 +29,9 @@
                 <button type="button" class="btn btn-success testbutton" data-toggle="modal" data-target="#myModal">
                     Start test
                 </button>
-                
 
-  <!-- The Modal -->
+
+                <!-- The Modal -->
                 <div class="modal" id="myModal">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -35,14 +40,14 @@
                                 <h4 class="modal-title">Teraz jest takie irytujące zjawisko jak kwarantanna?</h4>
                                 <button type="button" class="close" id="close1" data-dismiss="modal">&times;</button>
                             </div>
-  
+
                             <div class="modal-body">
                                 <div class="form-check">
                                     <label class="form-check-label" for="question1tak">
                                         <input type="radio" class="form-check-input" id="question1tak" name="optradio" value="tak, jest">Tak
                                     </label>
-                                  </div>
-                                  <div class="form-check">
+                                </div>
+                                <div class="form-check">
                                     <label class="form-check-label" for="question1nie">
                                       <input type="radio" class="form-check-input" id="question1nie" name="optradio" value="nie, nie jest">Na szczęscie, nie
                                     </label>
@@ -67,20 +72,20 @@
                                 <h4 class="modal-title" id="ques4">Czy jesteś doświadczonym Mistrzem, który jest biegły we wszystkich metodach, ale po prostu chcesz podciągnąć trochę wiedzy?</h4>
                                 <button type="button" class="close" id="close2" data-dismiss="modal">&times;</button>
                             </div>
-  
+
                             <div class="modal-body">
                                 <div class="form-check">
                                     <label class="form-check-label" for="question2tak">
                                         <input type="radio" class="form-check-input" id="question2tak" name="optradio" value="tak, jestem">Tak, jestem
                                     </label>
-                                  </div>
-                                  <div class="form-check">
+                                </div>
+                                <div class="form-check">
                                     <label class="form-check-label" for="question2nie">
                                       <input type="radio" class="form-check-input" id="question2nie" name="optradio" value="nie, nie jestem">Nie, nie jestem
                                     </label>
                                 </div>
                             </div>
-  
+
                             <div class="modal-footer">
                                 <button type="button" id="forClose2" class="btn btn-success btnnext" data-toggle="modal" data-target="#myModal2">
                                     Next question
@@ -93,27 +98,27 @@
                 <div class="modal" id="myModal2">
                     <div class="modal-dialog">
                         <div class="modal-content">
-  
+
                             <div class="modal-header">
                                 <h4 class="modal-title">Czy mieszkasz lub często przyjeżdżasz do Poznania?</h4>
                                 <button type="button" class="close" id="close3" data-dismiss="modal">&times;</button>
                             </div>
-  
+
                             <div class="modal-body">
                                 <div class="form-check">
                                     <label class="form-check-label" for="question3tak">
                                         <input type="radio" class="form-check-input" id="question3tak" name="optradio" value="tak">Tak
                                     </label>
-                                  </div>
-                                  <div class="form-check">
+                                </div>
+                                <div class="form-check">
                                     <label class="form-check-label" for="question3nie">
                                       <input type="radio" class="form-check-input" id="question3nie" name="optradio" value="nie">Nie
                                     </label>
-                                  </div>
+                                </div>
                             </div>
 
                             <div class="modal-footer">
-                                <button type="button" id="forClose3"  class="btn btn-success btnnext" data-toggle="modal" data-target="#myModal3">
+                                <button type="button" id="forClose3" class="btn btn-success btnnext" data-toggle="modal" data-target="#myModal3">
                                     Next question
                                 </button>
                             </div>
@@ -125,25 +130,25 @@
                 <div class="modal" id="myModal3">
                     <div class="modal-dialog">
                         <div class="modal-content">
-  
+
                             <div class="modal-header">
                                 <h4 class="modal-title">Co jest dla Ciebie ważniejsze...?</h4>
                                 <button type="button" class="close" id="close4" data-dismiss="modal">&times;</button>
                             </div>
-  
+
                             <div class="modal-body">
                                 <div class="form-check">
                                     <label class="form-check-label" for="question4tak">
                                         <input type="radio" class="form-check-input" id="question4tak" name="optradio" value="jakość">Jakość
                                     </label>
-                                  </div>
-                                  <div class="form-check">
+                                </div>
+                                <div class="form-check">
                                     <label class="form-check-label" for="question4nie">
                                       <input type="radio" class="form-check-input" id="question4nie" name="optradio" value="cena">Cena
                                     </label>
                                 </div>
                             </div>
-  
+
                             <div class="modal-footer">
                                 <button type="button" id="forClose4" class="btn btn-success btnnext" data-toggle="modal" data-target="#myModal5">
                                     Twój idealny kurs to...
@@ -152,121 +157,115 @@
                         </div>
                     </div>
                 </div>
-            
-                
+
+
 
 
                 <div class="modal delete" id="myModal5">
                     <div class="modal-dialog" id="myModalAnswer1Tak">
-                      <div class="modal-content">
-                  
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                          <h4 class="modal-title">Ze względu na fakt, że teraz jest kwarantanna, możemy zaoferować tylko szkolenia online</h4>
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Ze względu na fakt, że teraz jest kwarantanna, możemy zaoferować tylko szkolenia online</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <img src="pictures/online (240 x 240).jpg.jpg" class="imgShop" alt="logo online">
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <a href="online.html" class="back" target="_self">Zobaczyć</a>
+                            </div>
+
                         </div>
-                  
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            <img src="pictures/online (240 x 240).jpg.jpg" class="imgShop" alt="logo online">
-                        </div>
-                  
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-success" data-dismiss="modal">
-                              <a href="/main.html#szkolenieOnline" id="forTest" target="_self">Zobaczyć</a>
-                          </button>
-                        </div>
-                  
-                      </div>
                     </div>
                 </div>
 
                 <div class="modal delete2" id="myModal5">
                     <div class="modal-dialog" id="myModalAnswer2Tak">
-                      <div class="modal-content">
-                  
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                          <h4 class="modal-title">Chcemy, abyś nie przepłacała, więc proponujemy przejść jednodniowy Warsztat, gdzie rozważymy interesujące Cię pytanie</h4>
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Chcemy, abyś nie przepłacała, więc proponujemy przejść jednodniowy Warsztat, gdzie rozważymy interesujące Cię pytanie</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <img src="pictures/Masterclass 1 day (240 x 240).jpg.jpg" class="imgShop" alt="logo Masterclass">
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <a href="masterclass.html" class="back" target="_self">Zobaczyć</a>
+                            </div>
+
                         </div>
-                  
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            <img src="pictures/Masterclass 1 day (240 x 240).jpg.jpg" class="imgShop" alt="logo Masterclass">
-                        </div>
-                  
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-success" data-dismiss="modal">
-                              <a href="/main.html#szkolenieOnline" id="forTest" target="_self">Zobaczyć</a>
-                          </button>
-                        </div>
-                  
-                      </div>
                     </div>
                 </div>
 
 
                 <div class="modal delete3" id="myModal5">
                     <div class="modal-dialog" id="myModalAnswer3Tak">
-                      <div class="modal-content">
-                  
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                          <h4 class="modal-title">Aby nie musiałaś szukać hotelu, proponujemy wziąć udział w jednodniowych kursach. Ale jeśli chcesz zostać w Poznaniu na dłużej i zdobyć głębszą wiedzę, weź udział w dwudniowych kursach</h4>
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Aby nie musiałaś szukać hotelu, proponujemy wziąć udział w jednodniowych kursach. Ale jeśli chcesz zostać w Poznaniu na dłużej i zdobyć głębszą wiedzę, weź udział w dwudniowych kursach</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <img src="pictures/1 to 1 1 day (240 x 240).jpg.jpg" class="imgShopModal" alt="logo 1 to 1">
+                                <img src="pictures/2-3D 1 day (240 x 240).jpg.jpg" class="imgShopModal" alt="logo 2-3D">
+                                <img src="pictures/russian 1 day (240 x 240).jpg.jpg" class="imgShopModal" alt="logo russian">
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <a class="back" href="metoda1to1.html" target="_self">Zobaczyć</a>
+                            </div>
+
                         </div>
-                  
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            <img src="pictures/1 to 1 1 day (240 x 240).jpg.jpg" class="imgShopModal" alt="logo 1 to 1">
-                            <img src="pictures/2-3D 1 day (240 x 240).jpg.jpg" class="imgShopModal" alt="logo 2-3D">
-                            <img src="pictures/russian 1 day (240 x 240).jpg.jpg" class="imgShopModal" alt="logo russian">
-                        </div>
-                  
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-success" data-dismiss="modal">
-                              <a id="forTest" href="/main.html#szkolenieOnline" target="_self">Zobaczyć</a>
-                          </button>
-                        </div>
-                  
-                      </div>
                     </div>
                 </div>
 
                 <div class="modal delete4" id="myModal5">
                     <div class="modal-dialog" id="myModalAnswer4Tak">
-                      <div class="modal-content">
-                  
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                          <h4 class="modal-title">Proponujemy wziąć udział w najfajniejszych i najbardziej pełnych wiedzy kursach</h4>
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Proponujemy wziąć udział w najfajniejszych i najbardziej pełnych wiedzy kursach</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <img src="pictures/1 to 1 2 days (240 x 240).jpg.jpg" class="imgShopModal" alt="logo 1 to 1">
+                                <img src="pictures/2-3D 2 days (240 x 240).jpg.jpg" class="imgShopModal" alt="logo 2-3D">
+                                <img src="pictures/russian 2 days (240 x 240).jpg.jpg" class="imgShopModal" alt="logo russian">
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <a class="back" href="metoda1to12dni.html" target="_self">Zobaczyć</a>
+                            </div>
+
                         </div>
-                  
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            <img src="pictures/1 to 1 2 days (240 x 240).jpg.jpg" class="imgShopModal" alt="logo 1 to 1">
-                            <img src="pictures/2-3D 2 days (240 x 240).jpg.jpg" class="imgShopModal" alt="logo 2-3D">
-                            <img src="pictures/russian 2 days (240 x 240).jpg.jpg" class="imgShopModal" alt="logo russian">
-                        </div>
-                  
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-success" data-dismiss="modal">
-                              <a id="forTest" href="/main.html#szkolenieOnline" target="_self">Zobaczyć</a>
-                          </button>
-                        </div>
-                  
-                      </div>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
-        <div><h1><a class="back" href="main.html" target="_self">Nie chcę żadnych testów! Wrócić do glównej</a></h1></div>
+        <div>
+            <h1><a class="back" href="main.html" target="_self">Nie chcę żadnych testów! Wrócić do glównej</a></h1>
+        </div>
     </div>
 
 
@@ -276,4 +275,5 @@
     <script src="/Bootrap/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="scriptTest.js"></script>
 </body>
+
 </html>
