@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,93 @@
     <title>Cart</title>
     <link rel="stylesheet" href="/Bootrap/bootstrap-4.5.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylemain.css" type="text/css">
+    <link rel="stylesheet" href="styletest.css" type="text/css">
 </head>
-<body>
-    <h1>wybrałaś</h1>
-    <div class="container" id="div1" hidden>
-        <h5><a class="courses" href="metoda1to1.html" target="_self">Metoda 1 do 1</a></h5>                   
-    </div>
-    <div class="container" id="div2" hidden>
-        <h5><a class="courses" href="metoda2d.html" target="_self">Metoda 2-3D</a></h5>                   
-    </div>
-    <div class="container" id="div3" hidden>
-        <h5><a class="courses" href="russian.html" target="_self">Russian / Hollywood Effect</a>                  
-    </div>
 
+<body>
+    <div class="container-fluid">
+        <div class="interactive-text-cart">
+            <h1 id="intertextCart" class="A">OKi</h1>
+            <h1 id="intertextCart" class="B">LashSchool</h1>
+        </div>
+    </div>    
+    <h1 id="cart">Wybrałaś</h1>
+    <div class="container" id="cartForLink">
+        <h5><a class="courses" target="_self" id="selectedCourse"></a></h5>
+    </div>
+    <div>
+        <p id="oferta">W związku z tym, że oferujemy różne formy płatności oraz istnieje możliwość częściowego lub pełnego finansowania, dlatego po wybraniu kursu prosimy o kontakt w celu zaproponowania najkorzystniejszej opcji.</p>
+        <h4 id="kontakty">Nasze kontakty</h4>
+        <div class="row" id="kontaktyDlaCart">
+            <div class="col-sm-6">
+                <a href="https://www.instagram.com/yana.yestyle/" id="instagram">
+                    <img src="/pictures/instagram.png" alt="Instagram" style="width:35px;height:35px;">
+                </a> 
+            </div>
+            <div class="col-sm-6">
+                <a href="https://www.facebook.com/874376789409685/shop/all_products/?ref_code=page_shop_card&ref_surface=mini_shop_product_details">
+                    <img src="/pictures/Facebook.png" alt="Facebook" style="width:35px;height:35px;">
+                </a> 
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1><a class="back" href="main.html" target="_self">Wrócić do glównej</a></h1>
+    </div>
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/Bootrap/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="scriptTest.js"></script>
+
+    <script>
+        let selectedItem = localStorage.getItem("selectedItem");
+        let hrefAttr = "";
+        let selectedCourseName = "";
+
+        switch (selectedItem) {
+            case "1":
+                hrefAttr = 'metoda1to1.html';
+                selectedCourseName = 'Metoda 1 do 1';
+                break;
+            case "2":
+                hrefAttr = 'metoda2d.html';
+                selectedCourseName = 'Metoda 2-3D';
+                break;
+            case "3":
+                hrefAttr = 'russian.html';
+                selectedCourseName = 'Russian / Hollywood Effect';
+                break;
+            case "4":
+                hrefAttr = 'metoda1to12dni.html';
+                selectedCourseName = 'Metoda 1 do 1. 2 dni';
+                break;
+            case "5":
+                hrefAttr = 'metoda2d2dni.html';
+                selectedCourseName = 'Metoda 2-3D. 2 dni';
+                break;
+            case "6":
+                hrefAttr = 'russian2dni.html';
+                selectedCourseName = 'Russian / Hollywood Effect. 2 dni';
+                break; 
+            case "7":
+                hrefAttr = 'expresse.html';
+                selectedCourseName = 'Express course';
+                break;   
+            case "8":
+                hrefAttr = 'masterclass.html';
+                selectedCourseName = 'Masterclasses';
+                break;
+            case "9":
+                hrefAttr = 'online.html';
+                selectedCourseName = 'Szkolenie ONLINE';
+                break;
+            default:
+                break;
+        }
+
+        $("#selectedCourse").attr("href", hrefAttr);
+        $("#selectedCourse").text(selectedCourseName);
+    </script>
 </body>
+
 </html>

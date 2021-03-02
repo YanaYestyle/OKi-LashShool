@@ -1,6 +1,8 @@
-function myFunction(){
+function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
+
+
 
 // window.onclick = function(event){
 //     if(!event.target.matches(".dropbutton")){
@@ -92,38 +94,47 @@ addEvent(document.getElementById('clear-cart', 'click', function(e){
     cartCont.innerHTML = 'Koszyk jest pusty.';
 }));*/
 
-$("#buttonBuy1").on("click", function(event){
-    localStorage.setItem("hidden", false);
-})
+$("#buttonBuy1").on("click", function (event) {
+    localStorage.setItem("selectedItem", "1");
+    window.open("cart.html", "_self");
+});
 
-let isHidden1 = localStorage.getItem("hidden") ? localStorage.getItem("hidden") : false;
-if(isHidden1){
-    $("#div1").removeAttr("hidden");
-};
+$("#buttonBuy2").on("click", function (event) {
+    localStorage.setItem("selectedItem", "2");
+    window.open("cart.html", "_self");
+});
 
-$("#buttonBuy2").on("click", function(event){
-    localStorage.setItem("hidden", false);
-})
+$("#buttonBuy3").on("click", function (event) {
+    localStorage.setItem("selectedItem", "3");
+    window.open("cart.html", "_self");
+});
 
-let isHidden2 = localStorage.getItem("hidden") ? localStorage.getItem("hidden") : false;
-if(isHidden2){
-    $("#div2").removeAttr("hidden");
-};
+$("#buttonBuy4").on("click", function (event) {
+    localStorage.setItem("selectedItem", "4");
+    window.open("cart.html", "_self");
+});
 
-$("#buttonBuy3").on("click", function(event){
-    localStorage.setItem("hidden", true);
-})
+$("#buttonBuy5").on("click", function (event) {
+    localStorage.setItem("selectedItem", "5");
+    window.open("cart.html", "_self");
+});
 
-let isHidden3 = localStorage.getItem("hidden") ? localStorage.getItem("hidden") : true;
-if(isHidden3){
-    $("#div3").removeAttr("hidden");
-};
+$("#buttonBuy6").on("click", function (event) {
+    localStorage.setItem("selectedItem", "6");
+    window.open("cart.html", "_self");
+});
 
-/*$("#buttonBuy4").on("click", function(event){
-    localStorage.setItem("hidden", false);
-})
+$("#buttonBuy7").on("click", function (event) {
+    localStorage.setItem("selectedItem", "7");
+    window.open("cart.html", "_self");
+});
 
-let isHidden4 = localStorage.getItem("hidden") ? localStorage.getItem("hidden") : false;
-if(isHidden){
-    $("#div4").removeAttr("hidden");
-};*/
+$("#buttonBuy8").on("click", function (event) {
+    localStorage.setItem("selectedItem", "8");
+    window.open("cart.html", "_self");
+});
+
+$("#buttonBuy9").on("click", function (event) {
+    localStorage.setItem("selectedItem", "9");
+    window.open("cart.html", "_self");
+});
