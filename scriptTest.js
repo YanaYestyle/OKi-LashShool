@@ -65,6 +65,16 @@ $("#question4nie").on("click", function(event){
     $("#myModalAnswer3Tak").show(); 
 });
  
+$("#forClose4").on("click", function(){
+    $("input[name = 'optradio']").each(function(){
+        if($(this).attr("checked") !== "checked"){
+            alert("Nic nie wybrales!");
+            return false;
+        } else {
+            console.log("ok")
+        }
+    })    
+})
 
 
 
